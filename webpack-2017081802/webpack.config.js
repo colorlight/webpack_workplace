@@ -9,7 +9,7 @@ module.exports =  {
   },
 
   output: {
-    path: path.resolve(__dirname,'./dist/js'),
+    path: path.resolve(__dirname,'./dist/'),
     filename: '[chunkhash].js'
   },
 
@@ -17,7 +17,7 @@ module.exports =  {
     new htmlWebpackPlugin({
       filename: 'html/index-[hash].html',
       template: 'index.html',
-      inject: 'head',
+      inject: false,
       title: '分仓库有',
       date: new Date()
     })

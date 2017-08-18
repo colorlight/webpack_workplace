@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%= htmlWebpackPlugin.options.title %></title>
+  <script src="<%= htmlWebpackPlugin.files.chunks.hello.entry %>"></script>
 </head>
 <body>
+  <script src="<%= htmlWebpackPlugin.files.chunks.a.entry %>"></script>
   <%= htmlWebpackPlugin.options.date %>
   <% for (var key in htmlWebpackPlugin.files) { %>
     <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
