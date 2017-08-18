@@ -18,7 +18,8 @@ module.exports =  {
       filename: 'html/index-[hash].html',
       template: 'index.html',
       inject: 'head',
-      title: '分仓库有'
+      title: '分仓库有',
+      date: new Date()
     })
   ]
 }
