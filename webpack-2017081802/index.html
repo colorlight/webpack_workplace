@@ -8,5 +8,8 @@
 </head>
 <body>
   <%= htmlWebpackPlugin.options.date %>
+  <% for (var key in htmlWebpackPlugin.files) { %>
+    <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+  <% }%>
 </body>
 </html>
